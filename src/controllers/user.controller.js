@@ -26,7 +26,11 @@ exports.findOne = async (req, res) =>{
       [Op.and]: [{login: req.body.login}, {password: req.body.password}]
     }
   }).then(data=>{
-    res.send(data);
+    if(data !== null){
+      res.send(data);
+    } else{
+      res.status(404).send({message: 'Error'});
+    }
   }).catch(err=>{res.status(500).send({
     message:
       err.message || "Some error occurred while retrieving data."

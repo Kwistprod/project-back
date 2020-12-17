@@ -4,5 +4,11 @@ module.exports = {
     user: "oqwyaxatvawess",
     password: "69249aee76fb63bc5d5b7631ab8d68eed8926ae09256756d2cb388d3c5ef0589",
     DB: "derpf6i4qppiac",
-    dialect: "postgres"
+    dialect: "postgres",
+    // port:8080,
+    // host:"localhost",
+    // user: "postgres",
+    // password: "root",
+    // DB: "onlineschool",
+    // dialect: "postgres"
 }
